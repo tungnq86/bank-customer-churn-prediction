@@ -36,6 +36,8 @@ See the [analysis notebook](notebooks/bank_customer_churn_analysis.ipynb) for th
 
 ## Selected Model Results
 
+Five machine learning algorithms were evaluated. The table below highlights selected tuned configurations that illustrate the main precision–recall trade-offs. Full model comparisons and evaluation outputs are available in the [Jupyter Notebook](notebooks/bank_customer_churn_analysis.ipynb).
+
 | Model / configuration | ROC-AUC | Precision | Recall |
 |---|---:|---:|---:|
 | XGBoost (tuned) | **0.87** | **0.77** | 0.49 |
