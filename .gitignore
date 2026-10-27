@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.pyc
+# Dataset is downloaded from Kaggle by the reader
+Customer-Churn-Records.csv
