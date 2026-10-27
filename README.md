@@ -27,7 +27,7 @@ The original `Complain` feature is almost perfectly associated with the target i
 ## Analytical Approach
 
 1. **Prepare the data:** Explore the data, drop identifiers and `Complain`, encode categorical variables, and create balance-to-salary, tenure-to-age and credit-score-to-age ratios.
-2. **Feature selection & scaling:** Used Mutual Information on the training data to select relevant predictors. Applied StandardScaler for scale-sensitive models such as Logistic Regression and Neural Networks, while retaining unscaled features for tree-based models.
+2. **Feature selection & scaling:** Split the data into training (80%) and test (20%) sets. Used Mutual Information on the training data to select relevant predictors, and applied StandardScaler for scale-sensitive models while retaining unscaled features for tree-based models.
 3. **Class imbalance handling:** With churned customers representing 20.38% of the dataset, compared Random Oversampling, Random Undersampling and SMOTE on the training data to examine their effects on classification performance and precision–recall trade-offs.
 4. **Train and compare classifiers:** Evaluate Decision Tree, Random Forest, XGBoost, Logistic Regression and Neural Network models, including hyperparameter tuning using GridSearchCV.
 5. **Interpret results:** Compare classification metrics, confusion matrices and feature importance to discuss implications for customer retention.
